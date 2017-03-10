@@ -1,0 +1,18 @@
+<div class="register">
+	<form class="login-panel" name="form">		
+		<div class="person">
+			<span class="account-icon"></span>					
+			<input name="phone" ng-model="user.phone" validator="required, phone" type="text" class="mobile" placeholder="输入手机号">
+		</div>		
+		<div class="lock">
+			<span class="lock-icon"></span>			
+			<input name="password" ng-model="user.password" validator="required, password" type="password" class="password" placeholder="输入密码">
+		</div>
+		<div class="sms-code">
+			<input name="code" ng-model="user.code" validator="required" type="text" class="code" placeholder="短信验证码">
+			<button ng-class="{disabled: time}" class="sms-btn" ng-click="time?1==1:send()" ng-bind="time?time:'发送短信'"></button>
+		</div>
+		<button class="login-btn" ui-sref="login">登录</button>
+		<button class="register-btn" validation-submit="form" ng-click="submit()">注册</button>
+	</form>
+</div>

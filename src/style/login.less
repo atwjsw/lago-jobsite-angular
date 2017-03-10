@@ -1,0 +1,84 @@
+.login {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url(../image/background.png);
+	.login-panel {
+		.p-a;
+		top: 260px;
+		left: 50%;
+		transform: translate3d(-50%, 0, 0);
+		// .h(105);
+		.w(300);
+		.fs(0);		
+		.person, .lock {
+			.h(40);	
+			.w(300);
+			.p-r;	
+				
+		}
+		.person {			
+			border-bottom: 1px solid @defaultColor;
+			// .mb(5);
+			.account-icon{
+				.d-ib;
+				.h(40);	
+				.w(55);
+				.va-m;
+				background: url(../image/account.png) center center no-repeat rgba(0,0,0,0.4);
+			}
+		}
+		.lock {			
+			.mb(60);
+			.lock-icon {
+				.d-ib;
+				.h(40);	
+				.w(55);
+				.va-m;
+				background: url(../image/lock.png) center center no-repeat rgba(0,0,0,0.4);
+			}	
+		}
+		input {			
+			.fs(20);
+			.pl(20);
+			.pr(20);
+			.d-ib;
+			.h(40);			
+			.w(205);
+			background-color: rgba(0,0,0,0.2);	
+			.va-m;
+			color: @defaultColor;
+			&::-webkit-input-placeholder {
+				color: @defaultColor;
+			}
+		}
+	}		
+	.login-btn, .register-btn {						
+		.h(40);			
+		.w(300);
+		.fs(22);			
+	}	
+	.login-btn {
+		.mb(10);		
+		color: @defaultColor;
+		background-color: @headBgColor;
+		font-weight: bold;
+	}
+	.register-btn {		
+		color: @headBgColor;
+		font-weight: bold;			
+		background-color: @btnBgColor;
+		border: 1px solid @headBgColor;
+	}	
+	.ng-invalid {
+		&+span {
+			.p-a;
+			color: @dangerColor;
+			right: 0;
+			// top: 14px;
+			.fs(12);
+		}
+	}
+}

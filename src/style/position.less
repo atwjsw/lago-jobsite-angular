@@ -1,0 +1,61 @@
+.p-info {
+	padding: 10px;
+	background-color: @defaultColor;
+	.position-info {
+		border-bottom: 1px solid @lineColor;
+		position: relative;
+		.lh(40);
+		span {
+			.mr(20);
+		}
+		.salary {
+			color: #f00;
+		}
+		.star {
+			position: absolute;
+			right: 0;
+			top: 10px;
+		}
+	}
+	.company-info {
+		.pt(10);	
+		.clear;
+		overflow: hidden;
+		.logo {
+			.w(65);
+			.h(65);
+			.mr(10);
+			.f-l;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.info {
+			.f-l;
+			.name {
+				.fs(16);
+				.mb(10);
+			}
+		}
+	}
+}
+.position-description {
+	.mt(10);
+	background-color: @defaultColor;
+	.title {
+		.lh(30);
+		.pl(10);
+		border-bottom: 1px solid @lineColor;
+		font-weight: 700;
+	}
+	.desc {
+		.pt(20);		
+		.pb(10);		
+		.pl(10);
+		.responsibility {			
+		}
+		.item {			
+		}
+	}
+}

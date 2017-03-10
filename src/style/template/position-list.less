@@ -1,0 +1,44 @@
+.position-list {
+	.item {
+		.p-r;	
+		padding: 7px 3px;
+		border-bottom: 1px solid @listLineColor;
+		.lh(24);
+		.bg-w;
+		overflow: hidden;
+		.clear;
+		.logo {			
+			.f-l;		
+			img {
+				.h(65);
+				.w(65);		
+			}			
+		}
+		.info {
+			.f-l;
+			.ml(13);
+			.fs(14);	
+			.title {
+				.fs(16);
+			}
+			.salary {
+				color: @dangerColor;
+			}					
+		}
+		.star {
+			.p-a;
+			top: 14px;
+			right: 12px;
+			.d-ib;
+			.h(28);
+			.w(30);
+			background: url(../image/star.png);
+			background-size: 100% 100%;
+			&.active {
+				background: url(../image/star-active.png);
+				background-size: 100% 100%;
+			}
+		}
+	}
+	
+}

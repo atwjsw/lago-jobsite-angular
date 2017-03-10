@@ -1,0 +1,27 @@
+// 模板less文件，对应相应模板html，调用变量less和index.less中的函数和变量
+// @import '../variable.less';
+
+.head {
+	background-color: @headBgColor;
+	.h(40);
+	.lh(40);
+	padding: 0 7px;
+	.text {
+		color: @defaultColor;
+	}
+	.custom {
+		background-color: @warnColor;
+		color: @defaultColor;
+		border-color: @warnColor;
+		border-style: dashed;
+		.mt(7);
+		.pl(15);
+		.pr(15);
+		.fs(16);
+		.f-r;
+	}
+	.greeting {
+		color: @defaultColor;
+		.f-r;
+	}
+}

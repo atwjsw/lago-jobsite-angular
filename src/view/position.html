@@ -1,0 +1,15 @@
+<div app-head-bar text="职位详情"></div>
+<div app-position-info is-login="isLogin" is-active="isActive" pos="position"></div>
+<div app-company com="company"></div>
+<div class="position-description">
+	<div class="title">职位描述</div>
+	<pre class="desc" ng-bind="position.description"></pre>
+	<!-- <dl class="desc">
+		<dd class="responsibility">岗位职责</dd>
+		<dt class="item">1. 销售商品</dt>
+	</dl> -->	
+</div>
+<div class="foot-bar">	
+	<!-- <span ng-click="go()" class="text" ng-bind="isLogin?'投个简历':'去登录'"></span> -->
+	<span ng-click="go()" class="text" ng-bind="message"></span>
+</div>

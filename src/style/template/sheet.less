@@ -1,0 +1,40 @@
+.sheet {
+	.ta-c;
+	.fs(20);
+	color: @headBgColor;
+	.mask {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0,0,0,0.2);
+		z-index: 99;
+	}
+	ul {		
+		position: fixed;
+		left: 8px;
+		right: 8px;
+		bottom: 50px;
+		z-index: 100;
+		background-color: @defaultColor;
+		max-height: 500px;
+		overflow: auto;
+		li {
+			.lh(40);
+			.h(40);
+			border-bottom: 1px solid @lineColor;			
+		}	
+	}
+	.cancel-btn {
+		position: fixed;		
+		left: 8px;
+		right: 8px;
+		bottom: 0;
+		.lh(40);
+		.h(40);
+		z-index: 100;
+		background-color: @defaultColor;
+		border-radius: 5px;
+	}
+}

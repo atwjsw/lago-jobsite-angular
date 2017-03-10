@@ -1,0 +1,33 @@
+.position-class {
+	padding: 13px 9px;
+	background-color: @defaultColor;
+	border-top: 1px solid @lineColor;
+	.title {
+		.fs(16);
+		.mb(30);
+	}
+	.cls-name {
+		.d-ib;
+		padding: 10px 23px;
+		background-color: @btnColor;
+		border-radius: 20px;
+		.mb(10);
+		&.active {
+			background-color: @headBgColor;
+			color: @defaultColor;
+		}		
+	}	
+	.cls-info {
+		border-top: 1px solid @lineColor;
+		.pt(10);
+		.lh(24);
+		.p-r;
+		.salary {
+			.p-a;
+			top: 21px;
+			right: 10px;			
+			color: @dangerColor;
+		}
+	}
+
+}

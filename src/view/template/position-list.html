@@ -1,0 +1,15 @@
+<ul class="position-list">
+	<li class="item" ng-repeat="item in data | filterByObj:filterObj" ui-sref="position({id:item.id})">
+		<div class="logo">
+			<img ng-src="{{item.imageUrl}}" alt="千度">
+		</div>
+		<div class="info">
+			<h2 class="title">{{item.job}}</h2>
+			<p class="details">{{item.companyName}} [{{item.cityName}}] {{item.industryName}}
+				<span class="salary">{{item.salaryName}}</span><!-- /{{item.scaleName}} -->
+			</p>
+			<p class="date-time">{{item.date}}</p>
+		</div>
+		<i ng-if="isFavorite" class="star" ng-class="{active:item.select}" ng-click="select($event, item)"></i>
+	</li>
+</ul>

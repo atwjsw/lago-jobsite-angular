@@ -1,0 +1,51 @@
+.foot {
+	position: fixed;
+	width: 100%;
+	bottom: 0;	
+	.h(40);
+	font-size: 0;
+	border-top: 1px solid @lineColor;
+	.bg-w;	
+	.tab {		
+		.d-ib;
+		width: 33%;
+		font-size: 20px;	
+		.ta-c;
+		color: @muteColor;
+		border-right:  1px solid @lineColor;		
+		.lh(40);	
+		&:last-child {
+			border-right:  none;
+		}
+		.text {
+			.va-m;
+		}
+		.document {
+			width: 25px;
+			height: 21px;
+			background: url(../image/document.png) no-repeat;						
+		}
+		.search {
+			width: 24px;
+			height: 24px;
+			background: url(../image/search.png) no-repeat;
+		}
+		.my {
+			width: 23px;
+			height: 25px;
+			background: url(../image/my.png) no-repeat;
+		}	
+
+		.icon {
+			background-size: 20px;
+			display: inline-block;
+			.va-m;					
+		}		
+	}
+	
+	.select {
+		background-color: @hightlightBgColor;
+		color: @hightlightColor;
+	}
+
+}
